@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">loginScreen</string>
+    <string name="password">password</string>
+
+    <string name="pick_image_intent_text">image</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>

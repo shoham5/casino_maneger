@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:background="@drawable/imag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.welcome.welcomeScreen">
+
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="535dp"
+
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="4dp">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:paddingTop="20dp"
+            android:text="welcome "
+            android:textAlignment="center"
+
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bLogOut"
+                android:layout_width="187dp"
+                android:layout_height="52sp"
+                android:layout_weight="1"
+                android:text="LogOut"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/bEditProfile"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+                app:layout_constraintVertical_bias="0.064" />
+
+            <Button
+                android:id="@+id/bEditProfile"
+                android:layout_width="175dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="Edit profile"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/bLogOut"
+                app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+                app:layout_constraintVertical_bias="0.064" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bManegerScreen"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="70dp"
+            android:text="Login as meneger"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bLogOut"
+            app:layout_constraintVertical_bias="0.97"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <Button
+            android:id="@+id/mapbu"
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+            android:text="Map"
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-136dp"
+            tools:layout_editor_absoluteY="231dp" />
+
+        <Button
+            android:id="@+id/bShowInfo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="show profile"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/bManegerScreen"
+            app:layout_constraintTop_toBottomOf="@+id/bLogOut"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <Button
+            android:id="@+id/bFindMyLocation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Find my location"
+            android:textAlignment="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/bManegerScreen"
+            app:layout_constraintTop_toBottomOf="@+id/bShowInfo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

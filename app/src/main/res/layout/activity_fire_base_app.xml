@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imag"
+    tools:context="com.example.shoham.loginscreen.FIreBaseApp">
+
+    <Button
+        android:id="@+id/bcreateUser"
+        android:layout_width="120sp"
+        android:layout_height="52sp"
+
+        android:layout_marginBottom="228dp"
+        android:text="CREATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/emailEditTxtFiled"
+        android:layout_width="330sp"
+        android:layout_height="52sp"
+        android:ems="10"
+
+
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEditTxtFiled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <EditText
+        android:id="@+id/passwordEditTxtFiled"
+        android:layout_width="330sp"
+        android:layout_height="52sp"
+
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@+id/bcreateUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditTxtFiled" />
+
+    <Button
+        android:id="@+id/bmoveToUser"
+        android:layout_width="368dp"
+        android:layout_height="52sp"
+        android:layout_marginBottom="44dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bcreateUser"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/LogintextView"
+        android:layout_width="171dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/bmoveToUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bcreateUser" />
+</android.support.constraint.ConstraintLayout>
